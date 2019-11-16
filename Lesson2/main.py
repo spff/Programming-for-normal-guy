@@ -293,6 +293,6 @@ import pathlib
 g = pathlib.Path(__file__).parent.iterdir()
 print(f'g={g}')
 for child in g:
-    firstline = child.read_text().split('\n')[0]
     if child.is_file():
+        firstline = child.read_text().split('\n')[0]
         print(f'first line of {child.resolve()} is {firstline}')
