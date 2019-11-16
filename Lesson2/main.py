@@ -170,7 +170,7 @@ def dummy(x):
 
 print(f'{dummy(100)}, {dummy([3, "4"])}, {dummy(None)}')
 
-# Define a function called return_none which takes 2 arguments and return None
+# Define a function called return_first which takes 2 arguments and return None
 def return_first(x, y):
     print(f'x={x}, y={y}')
     return x
