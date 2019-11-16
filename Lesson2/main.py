@@ -247,8 +247,10 @@ def slow_fibonacci_gen(count):
     a = 0
     b = 1
     c = 0
+    yield 0
+    yield 1
     while c < count:
-        time.sleep(1)
+        time.sleep(0.4)
         n = a + b
         print(f'the next is {n}', flush=True)
         a = b
@@ -291,4 +293,5 @@ g = pathlib.Path().parent.iterdir()
 print(f'g={g}')
 for child in g:
     firstline = child.read_text().split('\n')[0]
-    print(f'first line of {child} is {firstline}')
+    if child.is_file():
+        print(f'first line of {child.resolve()} is {firstline}')
