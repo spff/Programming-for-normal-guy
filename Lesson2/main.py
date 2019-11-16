@@ -38,7 +38,7 @@ c = b
 print(f'after `c=b`, c is now {c}')
 c.append(10)
 print(f'c is now {c}')
-print(f'and b also become {b}')
+print(f'and b also becomes to {b}')
 print('that\'s because both b & c are referencing to the same `list`')
 c = [2,2,2]
 print(f'we ASSIGN another list to c, so c is now {c}, and b is still {b}')
@@ -142,8 +142,8 @@ for doubled_element in the_doubled_list:
 print()
 
 # we can do some filtering
-the_evan_list = [ element for element in the_list if element%2 == 0]
-print(f'the_even_list={the_evan_list}')
+the_even_list = [ element for element in the_list if element%2 == 0]
+print(f'the_even_list={the_even_list}')
 
 
 print(f'sorted_list={sorted(the_list)}')
