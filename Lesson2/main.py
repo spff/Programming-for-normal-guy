@@ -287,8 +287,8 @@ print(f'list(r4)={list(r4)}')
 
 #import another standard library : pathlib
 import pathlib
-g = pathlib.Path.cwd().iterdir()
+g = pathlib.Path().parent.iterdir()
 print(f'g={g}')
 for child in g:
     firstline = child.read_text().split('\n')[0]
-    print(f'{child} first line is {firstline}')
+    print(f'first line of {child} is {firstline}')
