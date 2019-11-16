@@ -289,7 +289,8 @@ print(f'list(r4)={list(r4)}')
 
 #import another standard library : pathlib
 import pathlib
-g = pathlib.Path().parent.iterdir()
+# list all files in the same directory of this python file with their first line 
+g = pathlib.Path(__file__).parent.iterdir()
 print(f'g={g}')
 for child in g:
     firstline = child.read_text().split('\n')[0]
