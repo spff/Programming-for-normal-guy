@@ -294,5 +294,5 @@ g = pathlib.Path(__file__).parent.iterdir()
 print(f'g={g}')
 for child in g:
     if child.is_file():
-        firstline = child.read_text().split('\n')[0]
+        firstline = child.read_text(errors='ignore').split('\n')[0]
         print(f'first line of {child.resolve()} is {firstline}')
