@@ -367,4 +367,29 @@ def factorial_iter(n):
     return ret
 
 print(factorial_iter(5))
+print()
 
+def nothing():
+    pass
+print(nothing())
+
+print()
+def cf(a=0):
+    while True:
+        a += 1
+        print(a)
+        if a > 10:
+            return 'QQ'
+        elif a % 2 == 0:
+            continue
+        elif a % 3 == 0:
+            pass
+        else:
+            a += 1
+    else:
+        return 'yee'
+    return 'yo'
+
+print(cf(0))
+print()
+print(cf(1))
