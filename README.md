@@ -3,6 +3,7 @@ You might want to read if you don't want to be a full-time programmer, but you s
 
 [Introduction](https://medium.com/@spff/programming-for-normal-guy-6fb6c0a17459)
 
+All questions are welcome by [firing an issue here](https://github.com/spff/Programming-for-normal-guy/issues/new)
 
 - Lesson 0
     - Install Python (10-10 min)
