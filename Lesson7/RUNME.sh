@@ -1,0 +1,1 @@
+python -m Lesson7.main
